@@ -1,0 +1,160 @@
+
+<zk>
+	<div class="general" apply="controlador.CTutorAcademico">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Registro Tutor Academico"
+						colspan="6" image="..src/imagenes/registo.png" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Cedula:" />
+						<hbox>
+							<radiogroup id= "rdbTipoCedulaTutorAcademico">
+								<radio id="rdoVenezolano" label="V" />
+								<radio id="rdoExtranjero" label="E"  />
+							</radiogroup>
+							
+							<textbox id="txtCedulaTutorAcademico"
+								hflex="1"  />
+							<button id="btnBuscarTutorAcademico"
+								label="Buscar" />
+						</hbox>
+					</row>
+					<row>
+						<label class="etiqueta" value="Primer Nombre:" />
+						<textbox id="txtNombre1TutorAcademico" hflex="1"
+							 />
+					</row>
+					<row>
+						<label class="etiqueta" value="Segundo Nombre:" />
+						<textbox id="txtNombre2TutorAcademico"
+							hflex="2" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Primer Apellido:" />
+						<textbox id="txtApellido1TutorAcademico"
+							hflex="1"  />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Segundo Apellido:" />
+						<textbox id="txtApellido2TutorAcademico"
+							hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Sexo:" />
+
+						<radiogroup id="rdbSexoTutorAcademico">
+							<radio id="rdoSexoFTutorAcademico"
+								label="Femenino"  />
+							<radio id="rdoSexoMTutorAcademico"
+								label="Masculino" />
+						</radiogroup>
+					</row>
+					<row>
+						<label class="etiqueta" value="Residencia:" />
+						<textbox id="txtResidenciaTutorAcademico"
+							hflex="1" multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Correo Electronico:" />
+						<textbox id="txtCorreoTutorAcademico" hflex="1"
+							 />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono1:" />
+						<intbox id="txtTelefono1TutorAcademico"
+							hflex="1"  />
+					</row>
+
+					<row>
+						<label class="etiqueta" value="Telefono2:" />
+						<intbox id="txtTelefono2TutorAcademico"
+							hflex="1" />
+					</row>
+
+					<row>
+						<label class="etiqueta" value="Area Academica:" />
+						<combobox id="cmbAreaAcademica" readonly="true"
+							width="100%">
+							<template name="model">
+								<comboitem label="${each.nombre}" />
+							</template>
+						</combobox>
+					</row>
+					<!-- No pude meter la lista en el grid, porque da error-->		
+				</rows>
+			</grid>
+			<hbox>
+		<listbox id="listaAreasConocimiento" height="160px"
+			emptyMessage="No hay Areas Registrados">	 
+			<listhead>
+				<listheader label="Nombre" />
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell label="${each.nombre}"></listcell>
+							<listcell><div class='text-center'><spinner inplace="true"
+                           width="98%"/></div>
+                   	</listcell>
+				</listitem>
+			</template>
+		</listbox>
+
+		<vbox>
+			<button id="pasar1" label="=&gt;" />
+			<button id="pasar2" label="&lt;=" />		
+		</vbox>
+
+		<listbox id="listaAreasAgregadas" height="160px"
+			emptyMessage="No ha Seleccionado ningun Area">
+			<listhead>
+				<listheader label="Nombre" />
+				<listheader label="Nro. Tutoriados" />
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell label="${each.nombre}"></listcell>
+					<listcell><div class='text-center'><spinner inplace="true"
+                            value="${each.tutoriados}" width="98%"/></div>
+                   	</listcell>
+				</listitem>
+			</template>
+		</listbox>
+	</hbox>
+			<div id="botoneraEstandar"></div>
+
+			<listbox id="listaTutoresAcademicos" height="100px"
+				emptyMessage="No hay estudiantes registrados">
+
+				<listhead>
+					<listheader label="Cedula" />
+					<listheader label="Nombre" />
+					<listheader label="Apellido" />
+					<listheader label="Sexo" />
+					<listheader label="Area" />
+
+				</listhead>
+				<template name="model">
+					<listitem>
+						<listcell label="${each.cedula}"></listcell>
+						<listcell label="${each.nombre1}"></listcell>
+						<listcell label="${each.apellido1}"></listcell>
+						<listcell>
+							<label value="${each.sexo}" />
+						</listcell>
+						<listcell>
+							<label value="${each.areaAcademica.nombre }" />
+						</listcell>
+
+					</listitem>
+				</template>
+			</listbox>
+		</groupbox>
+	</div>				
+</zk>

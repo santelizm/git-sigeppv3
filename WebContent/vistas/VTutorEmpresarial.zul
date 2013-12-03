@@ -1,0 +1,107 @@
+<zk>
+	<div class="general" apply="controlador.CTutorEmpresarial">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Tutor Empresarial"
+						colspan="6" image="..src/imagenes/registo.png" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Cedula:" />
+						<hbox>
+							<radiogroup id= "rdbTipoCedulaTutorEmpresarial">
+								<radio id="rdoVenezolano" label="V" />
+								<radio id="rdoExtranjero" label="E"  />
+							</radiogroup>
+							<textbox id="txtCedulaTutorEmpresarial"
+								hflex="1"  />
+						</hbox>
+							<button id="btnBuscarTutorEmpresarial"
+							label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Primer Nombre:" />
+						<textbox id="txtNombre1TutorEmpresarial"
+							hflex="1"  />
+					</row>
+					<row>
+						<label class="etiqueta" value="Segundo Nombre:" />
+						<textbox id="txtNombre2TutorEmpresarial"
+							hflex="2" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Primer Apellido:" />
+						<textbox id="txtApellido1TutorEmpresarial"
+							hflex="1"  />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Segundo Apellido:" />
+						<textbox id="txtApellido2TutorEmpresarial"
+							hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Sexo:" />
+
+						<radiogroup id="rdbSexoTutorEmpresarial">
+							<radio label="Femenino" value="Femenino" id="rdoFemenino" />
+							<radio label="Masculino" value="Masculino" id="rdoMasculino" />
+						</radiogroup>
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Correo Electronico:" />
+						<textbox id="txtCorreoTutorEmpresarial"
+							hflex="1"/>
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono1:" />
+						<intbox id="txtTelefono1TutorEmpresarial"
+							hflex="1"  />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono2:" />
+						<intbox id="txtTelefono2TutorEmpresarial"
+							hflex="1"  />
+					</row>
+					<row>
+					<label class="etiqueta" value="Empresa:" />
+						<combobox id="cmbEmpresa" readonly="true"
+							width="100%">
+							<template name ="model">
+							<comboitem label = "${each.nombre}"></comboitem>
+							</template>
+						</combobox>
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+			<listbox id="listaTutorEmpresarial" height="100px"
+				emptyMessage="No hay tutores registrados">
+
+				<listhead>
+					<listheader label="Cedula" />
+					<listheader label="Nombre" />
+					<listheader label="Apellido" />
+					<listheader label="Correo" />
+					<listheader label="Telefono" />
+					<listheader label="Empresa" />
+
+				</listhead>
+				<template name="model">
+					<listitem>
+						<listcell label="${each.cedula}"></listcell>
+						<listcell label="${each.nombre1}"></listcell>
+						<listcell label="${each.apellido1}"></listcell>
+						<listcell label="${each.correo}"></listcell>
+						<listcell label="${each.telefono1}"></listcell>
+                        <listcell label="${each.empresa.nombre}"></listcell>
+					</listitem>
+				</template>
+			</listbox>
+		</groupbox>
+	</div>
+</zk>

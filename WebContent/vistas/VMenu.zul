@@ -1,0 +1,433 @@
+<zk>
+	<tree class="menu" id="menuGeneral">
+		<treecols sizable="true">
+			<treecol />
+		</treecols>
+		<treechildren>
+			<treeitem open="false">
+				<treerow>
+					<treecell label="Datos Basicos" />
+				</treerow>
+				<treechildren>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Registrar Area de Desempeno" />
+						</treerow>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Gestion Empresarial" />
+						</treerow>
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell label="Registrar Empresa" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Registrar Tutor Empresarial" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Registrar Ofertas de practicas profesionales" />
+								</treerow>
+							</treeitem>
+						</treechildren>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Gestion Academica" />
+						</treerow>
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Registrar Programa" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Registrar Estudiante" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Registrar Tutor Academico" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Asignar Areas a Tutor academico" />
+								</treerow>
+							</treeitem>
+						</treechildren>
+					</treeitem>
+					<treeitem open="false">
+						<treerow>
+							<treecell label="Formatos" />
+						</treerow>
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Carta de Presentación" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Carta de Aceptación" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Carta de compromiso del tutor academico" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Plantilla para la evaluación del estudiantes" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Carta de Culminación" />
+								</treerow>
+							</treeitem>
+						</treechildren>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Registrar actividades academicas" />
+						</treerow>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Registrar actividades del Plan de trabajo" />
+						</treerow>
+					</treeitem>
+				</treechildren>
+			</treeitem>
+			<treeitem open="false">
+				<treerow>
+					<treecell label="Planificación" />
+				</treerow>
+				<treechildren>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Registrar cronograma de practicas profecionales" />
+						</treerow>
+					</treeitem>
+				</treechildren>
+			</treeitem>
+			<treeitem open="false">
+				<treerow>
+					<treecell label="Inscripción" />
+				</treerow>
+				<treechildren>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Asignación de practica profesionales" />
+						</treerow>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Formalización de Inscripción de practica profesionales" />
+						</treerow>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Registrar plan de trabajo" />
+						</treerow>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Registrar seguimiento del pasante" />
+						</treerow>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Registrar Evaluacion de Practicas Profesionales" />
+						</treerow>
+					</treeitem>
+				</treechildren>
+			</treeitem>
+			<treeitem open="false">
+				<treerow>
+					<treecell label="Documentos" />
+				</treerow>
+				<treechildren>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Recaudos para las practicas profesionales" />
+						</treerow>
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Carta de Aceptación" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Carta de compromiso del tutor academico" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Carta de Culminación" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell label="Informe Final" />
+								</treerow>
+							</treeitem>
+						</treechildren>
+					</treeitem>
+				</treechildren>
+			</treeitem>
+			<treeitem open="false">
+				<treerow>
+					<treecell label="Reportes" />
+				</treerow>
+				<treechildren>
+					<treeitem>
+						<treerow>
+							<treecell label="Basicos (filtrado)" />
+						</treerow>
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Calendario academico de las Practicas profesionales" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Areas de desempeño" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell label="Empresas" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Tutores Academicos" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Ofertas de Practicas Profesionales" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Solicitudes de practicas profesionales" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell label="Pasantes" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Visitas pautadas por tutores" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell label="Plan de trabajo" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Calendario de plan de trabajo" />
+								</treerow>
+							</treeitem>
+						</treechildren>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Estadisticos" />
+						</treerow>
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Estudiantes aprobados por área de desempeño (Grafico)" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Estudiantes aprobados por lapsos (Grafico)" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Estudiantes aprobados por programa (Grafico)" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Estudiantes aprobados por empresa (Grafico)" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Grafico comparativo de Solicitudes Aprobadas vs Rechazadas" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Grafico comparativo de Estudiantes Aprobados vs Rechazados" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Demanda de prácticas profesionales agrupadas por sexo" />
+								</treerow>
+							</treeitem>
+
+						</treechildren>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Estrategicos" />
+						</treerow>
+						<treechildren>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Areas de desempeño menos demandadas por las empresas" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Areas de desempeño mas demandadas por las empresas" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Areas de desempeño menos demandadas por los estudiantes" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Areas de desempeño mas demandadas por los estudiantes" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Estudiantes rechazados" />
+								</treerow>
+							</treeitem>
+							<treeitem>
+								<treerow>
+									<treecell
+										label="Empresas por area de desempeño" />
+								</treerow>
+							</treeitem>
+						</treechildren>
+					</treeitem>
+
+				</treechildren>
+			</treeitem>
+
+			<treeitem open="false">
+				<treerow>
+					<treecell label="Administracion del Sistema" />
+				</treerow>
+				<treechildren>
+					<treeitem>
+						<treerow>
+							<treecell label="Seguridad Funcional" />
+						</treerow>
+
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Mantenimiento de datos" />
+						</treerow>
+
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Ayuda" />
+						</treerow>
+					</treeitem>
+				</treechildren>
+			</treeitem>
+			<treeitem open="false">
+				<treerow>
+					<treecell label="Configurar Portal Web" />
+				</treerow>
+				<treechildren>
+					<treeitem>
+						<treerow>
+							<treecell label="Registrar Noticias" />
+						</treerow>
+
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Configurar menu" />
+						</treerow>
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell label="Configurar ayuda" />
+						</treerow>
+
+					</treeitem>
+					<treeitem>
+						<treerow>
+							<treecell
+								label="Registrar enlaces de interes" />
+						</treerow>
+					</treeitem>
+				</treechildren>
+			</treeitem>
+		</treechildren>
+	</tree>
+</zk>

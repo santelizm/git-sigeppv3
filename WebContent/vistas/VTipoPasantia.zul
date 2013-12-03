@@ -1,0 +1,43 @@
+<zk>
+	<div class="general" apply="controlador.CTipoPasantia">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Tipo de Pasantia" colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionTipoPasantia" hflex="1"/>
+						<button id="btnBuscarTipoPasantia" label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Observacion:" />
+						<textbox id="txtObservacionTipoPasantia" hflex="1"
+						    multiline="true" width="100%" />
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+			<div id="catalogoTipoPasantia">
+			
+			<listbox id="listaTipoPasantia" height="160px" emptyMessage="No hay Tipos de Pasantias registrados">
+		
+		<listhead>
+			<listheader label="Descripcion" />
+			<listheader label="Observacion" />			
+		</listhead>
+		<template  name="model">
+			<listitem >
+			    <listcell label="${each.descripcion}"></listcell>
+				<listcell label="${each.observacion}"></listcell>
+			</listitem>
+		</template>
+	</listbox>
+	
+			
+			</div>
+		</groupbox>
+	</div>
+</zk>

@@ -1,0 +1,165 @@
+<zk>
+	<div class="general" apply="controlador.CEstudiante">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Estudiante" colspan="6"
+						image="..src/imagenes/registo.png" />
+				</auxhead>
+				<columns />
+				<rows>
+
+					<row>
+
+						<label class="etiqueta" value="Cedula:" />
+						<hbox>
+							<radiogroup id="rdgTipoCedulaEstudiante">
+								<radio label="V" value="venezolano" id="rdoVenezolano" />
+								<radio label="E" value="extranjero" id="rdoExtranjero" />
+							</radiogroup>
+							<textbox id="txtCedulaEstudiante" hflex="1"/>
+							<button id="btnBuscar" label="Buscar" />
+						</hbox>
+						
+
+					</row>
+					<row>
+						<label class="etiqueta" value="Primer Nombre:" />
+						<textbox id="txtNombre1Estudiante" hflex="1"/>
+					</row>
+					<row>
+						<label class="etiqueta" value="Segundo Nombre:" />
+						<textbox id="txtNombre2Estudiante" hflex="2" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Primer Apellido:" />
+						<textbox id="txtApellido1Estudiante" hflex="1"/>
+					</row>
+					<row>
+						<label class="etiqueta" value="Segundo Apellido:" />
+						<textbox id="txtApellido2Estudiante" hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Sexo:" />
+
+						<radiogroup id="rdgSexoEstudiante">
+							<radio label="Femenino" value="femenino" id= "rdoSexoFemeninoEstudiante"/>
+							<radio label="Masculino" value="Masculino" id= "rdoSexoMasculinoEstudiante" />
+						</radiogroup>
+					</row>
+					<row>
+						<label class="etiqueta" value="Estado Civil:" />
+						<combobox id="cmbEstadoCivilEstudiante" readonly="true"
+							width="100%">
+							<comboitem label="Casado" />
+							<comboitem label="Soltero" />
+							<comboitem label="Viudo" />
+						</combobox>
+					</row>
+					<row>
+						<label class="etiqueta" value="Fecha de Nacimiento:" />
+						<datebox id="dtbFechaNacimientoEstudiante" cols="8" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Residencia:" />
+						<textbox id="txtResidenciaEstudiante" hflex="1"
+							multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Correo:" />
+						<textbox id="txtCorreo" hflex="1"/>
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono movil:" />
+						<intbox id="txtTelefonoMovilEstudiante" hflex="1"/>
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono Local:" />
+						<intbox id="txtTelefonoLocalEstudiante" hflex="1" />
+					</row>
+					
+					<!--  
+					<row> <label class="etiqueta" value="Foto:" />
+					<panel>
+						<panelchildren>
+							<fileupload id="fotoEstudiante" label="Cargar Imagen">
+							</fileupload>
+						</panelchildren>
+					</panel>
+					<vbox>
+						Foto:
+						<image id="imagen" />
+					</vbox>
+					</row>
+					-->
+					<row>
+						<label class="etiqueta" value="Programa:" />
+						<combobox id="cmbPrograma" readonly="true" width="100%">
+						<template  name="model">
+							<comboitem label="${each.nombre}"/>
+						</template>
+						</combobox>
+					</row>
+					<row>
+						<label class="etiqueta" value="Promedio:" />
+
+						<textbox id="txtPromedio" hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Semestre:" />
+
+						<combobox id="cmbSemestre" readonly="true" width="100%">
+							<comboitem label="1" />
+							<comboitem label="2" />
+							<comboitem label="3" />
+							<comboitem label="4" />
+							<comboitem label="5" />
+							<comboitem label="6" />
+							<comboitem label="7" />
+							<comboitem label="8" />
+							<comboitem label="9" />
+							<comboitem label="10" />
+						</combobox>
+					</row>
+					<row>
+						<label class="etiqueta" value="Creditos Aprobados:" />
+						<intbox id="txtCreditosAprobados" hflex="1" width="100px" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Servicio Comunitario:" />
+
+						<radiogroup id="rdgServicioComunitario">
+							<radio label="Aprobado" id="rdoAprobado"/>
+							<radio label="No aprobado" id="rdoNoAprobado" />
+						</radiogroup>
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+			<div id="catalogoEstudiante">
+			
+			<listbox id="listaEstudiante" height="160px" emptyMessage="No hay estudiantes registrados">
+		
+		<listhead>
+		    <listheader label="Cedula" />
+			<listheader label="Nombre" />
+			<listheader label="Apellido" />
+			<listheader label="Sexo" width="20%"/>
+			<listheader label="Programa" />
+			
+		</listhead>
+		<template  name="model">
+			<listitem>
+			    <listcell label="${each.cedula}"></listcell>
+				<listcell label="${each.nombre1}"></listcell>
+				<listcell label="${each.apellido1}"></listcell>
+				<listcell><label value="${each.sexo}" /></listcell>
+				<listcell label="${each.programa.nombre}"></listcell>
+					
+			</listitem>
+		</template>
+	</listbox>
+	</div>
+		</groupbox>
+	</div>
+</zk>

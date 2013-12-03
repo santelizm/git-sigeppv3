@@ -1,0 +1,59 @@
+<zk>
+	<div class="general" apply="controlador.CAreaAcademica">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Registro Areas Academicas"
+						colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombreAreaAcademica" hflex="1"
+							 />
+						<button id="btnBuscarArea" label="Buscar" />
+						
+					</row>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionAreaAcademica"
+						 hflex="1" multiline="true" width="100%"
+							/>
+					</row>
+
+					<row>
+						<label class="etiqueta" value="Departamento:" />
+						<combobox id="cmbDepartamento" readonly="true"
+							width="100%">
+							<template name="model">
+								<comboitem label="${each.nombre}" />
+							</template>
+						</combobox>
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+
+
+
+
+			<listbox id="listaAreaAcademica" height="100px"
+				emptyMessage="No hay Areas Academicas Registradas">
+
+				<listhead>
+					<listheader label="Nombre" />
+					<listheader label="Descripcion" />
+					<!--<listheader label="Departamento" />-->
+				</listhead>
+				<template name="model">
+					<listitem>
+						<listcell label="${each.nombre}"></listcell>
+						<listcell label="${each.descripcion}"></listcell>
+						<!--<listcell label="${each.departamento}"></listcell> -->
+					</listitem>
+				</template>
+			</listbox>
+		</groupbox>
+	</div>
+</zk>

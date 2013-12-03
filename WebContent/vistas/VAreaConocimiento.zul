@@ -1,0 +1,46 @@
+<zk>
+	<div class="general" apply="controlador.CAreaConocimiento">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Registrar Areas de Conocimiento"
+						colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombreAreaConocimiento"
+							hflex="1" />
+						<button id="btnBuscarAreaConocimiento"
+							label="Buscar" />
+							
+					</row>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionAreaConocimiento"
+							hflex="1" multiline="true" width="100%" />
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+
+			<listbox id="listaAreaConocimiento" height="100px"
+				emptyMessage="No hay Areas de Conocimiento Registradas">
+
+				<listhead>
+					<listheader label="Nombre" />
+					<listheader label="Descripcion" />
+
+				</listhead>
+				<template name="model">
+					<listitem>
+						<listcell label="${each.nombre}"></listcell>
+						<listcell label="${each.descripcion}"></listcell>
+			
+					</listitem>
+				</template>
+			</listbox>
+		</groupbox>
+	</div>
+</zk>

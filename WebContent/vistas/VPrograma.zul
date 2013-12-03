@@ -1,0 +1,101 @@
+<zk>
+	<div class="general" apply="controlador.CPrograma">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Programa" colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombrePrograma" hflex="1"/>
+						<button id="btnBuscarPrograma" label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionPrograma" hflex="1"
+						    multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono:" />
+						<intbox id="txtTelefonoPrograma" hflex="1"/>
+					</row>
+					<row>
+						<label class="etiqueta" value="Permite varias pasantias:" />
+
+						<radiogroup id="rdbPasantiasPrograma">
+							<radio label="Si" value="si" id= "rdbVariasPasantiasSi"/>
+							<radio label="No" value="no" id= "rdbVariasPasantiasNo" />
+						</radiogroup>
+					</row>
+					<row>
+						<label class="etiqueta" value="Tutoriados permitidos" />
+						<textbox id="txtTutoriadosPrograma" hflex="1"/>
+					</row>
+				</rows>
+			</grid>
+			<hbox>
+		<listbox id="listaDepartamento" height="160px"
+			emptyMessage="No hay Departamentos registrados">	 
+			<listhead>
+				<listheader label="Nombre" />
+				<listheader label="Descripcion" />
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell label="${each.nombre}"></listcell>
+					<listcell label="${each.descripcion}"></listcell>
+							<listcell><div class='text-center'><spinner inplace="true"
+                           width="98%"/></div>
+                   	</listcell>
+				</listitem>
+			</template>
+		</listbox>
+
+		<vbox>
+			<button id="pasar1" label="=&gt;" />
+			<button id="pasar2" label="&lt;=" />		
+		</vbox>
+
+		<listbox id="listaDepartamentosAgregados" height="160px"
+			emptyMessage="No ha Seleccionado ningun Departamento">
+			<listhead>
+				<listheader label="Nombre" />
+				<listheader label="Descripcion" />
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell label="${each.nombre}"></listcell>
+					<listcell label="${each.descripcion}"></listcell>
+                  
+				</listitem>
+			</template>
+		</listbox>
+	</hbox>
+			<div id="botoneraEstandar"></div>
+			<div id="catalogoPrograma">
+			
+			<listbox id="listaPrograma" height="160px" emptyMessage="No hay Programas registrados">
+		
+		<listhead>
+		    <listheader label="Nombre" />
+			<listheader label="Descripcion" />
+			<listheader label="Telefono" />	
+			<listheader label="Tutoriados permitidos" />		
+		</listhead>
+		<template  name="model">
+			<listitem >
+			    <listcell label="${each.nombre}"></listcell>
+				<listcell label="${each.descripcion}"></listcell>
+				<listcell label="${each.telefono}"></listcell>
+				<listcell label="${each.cantidadSugTutorar}"></listcell>
+			</listitem>
+		</template>
+	</listbox>
+	
+			
+			</div>
+		</groupbox>
+	</div>
+</zk>

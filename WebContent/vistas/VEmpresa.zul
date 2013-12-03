@@ -1,0 +1,80 @@
+<zk>
+	<div class="general" apply="controlador.CEmpresa">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Empresa"
+                        colspan="6" image="..src/imagenes/registo.png" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="RIF:" />
+						<textbox id="txtRifEmpresa" hflex="1" />
+							<button id="btnBuscarEmpresa" label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombreEmpresa" hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Direccion 1:" />
+						<textbox id="txtDireccion1Empresa" hflex="1" multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Direccion 2:" />
+						<textbox id="txtDireccion2Empresa" hflex="1" multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono Local:" />
+						<intbox id="txtTelefonolocalEmpresa" hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono Movil:" />
+						<intbox id="txtTelefonoMovilEmpresa" hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Correo 1:" />
+
+						<textbox id="txtCorreo1Empresa" hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Correo 2:" />
+
+						<textbox id="txtCorreo2Empresa" hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Nombre Persona de Contacto:" />
+						<textbox id="txtNombreContacto" hflex="1" />
+					</row>
+					
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+	
+		<listbox id="listaEmpresa" height="160px" emptyMessage="No hay empresas registradas">
+		
+		<listhead>
+		    <listheader label="Rif" />
+			<listheader label="Nombre" />
+			<listheader label="Direccion" />
+			<listheader label="Telefono" />
+			<listheader label="Correo" />
+		
+			
+		</listhead>
+		<template  name="model">
+			<listitem>
+			    <listcell label="${each.rif}"></listcell>
+				<listcell label="${each.nombre}"></listcell>
+				<listcell label="${each.direccion1}"></listcell>
+				<listcell label="${each.telefono1}"></listcell>
+				<listcell label="${each.correoElectronico1}"></listcell>
+		
+			</listitem>
+		</template>
+		</listbox>
+		</groupbox>
+	</div>
+</zk>

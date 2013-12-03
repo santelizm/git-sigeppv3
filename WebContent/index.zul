@@ -1,0 +1,27 @@
+<?page title="index.zul"?>
+<zk>
+	<style src="CSS/Estilo2.css" />
+	<div class="divEncabezado" height="4em">
+		<label value="Hola"></label>
+	</div>
+ <borderlayout>
+            <west title="Menú" size="25%" flex="true" maxsize="250" splittable="false" collapsible="true">
+                <div>
+                    <include src="/vistas/VMenu.zul" />
+                </div>
+            </west>
+            <center border="none" flex="true">
+                <div>
+                    <label value="25%"
+                        style="color:white;font-size:50px" />
+                </div>
+            </center>
+        </borderlayout>
+        
+
+<!-- 	<div id="copyright"> -->
+<!-- 		Copyright © 2013-2014 Strategy Corporation All rights reserved. -->
+
+<!-- 	</div> -->
+
+</zk>

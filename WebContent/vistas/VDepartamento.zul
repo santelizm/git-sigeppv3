@@ -1,0 +1,44 @@
+<zk>
+	<div class="general" apply="controlador.CDepartamento">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Departamento" colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombreDepartamento" hflex="1"/>
+						<button id="btnBuscarDepartamento" label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionDepartamento" hflex="1"
+						    multiline="true" width="100%" />
+					</row>
+						
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+			<div id="catalogoDepartamento">
+			
+			<listbox id="listaDepartamento" height="160px" emptyMessage="No hay Departamentos registrados">
+		
+		<listhead>
+			<listheader label="Nombre" />
+			<listheader label="Descripcion" />		
+		</listhead>
+		<template  name="model">
+			<listitem >
+			    <listcell label="${each.nombre}"></listcell>
+				<listcell label="${each.descripcion}"></listcell>
+			</listitem>
+		</template>
+	</listbox>
+	
+			
+			</div>
+		</groupbox>
+	</div>
+</zk>
